@@ -1,0 +1,140 @@
+/*==== Fonts ===*/
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../fonts/OpenSans-Semibold-webfont.eot');
+    src: url('../fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Semibold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Semibold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+	font-family: 'open_sansregular';
+	font-size: 12px;
+	background: #fff;
+}
+
+/*=== Main ===*/
+.container{
+	position: relative;
+	width: 100%;
+	max-width: 425px;
+	margin: 54px auto;
+	padding: 45px 75px 47px 45px;
+	background-image: url('../img/psd-blue-login-box.png');
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	-webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#loginform{
+	position: relative;
+	z-index: 10;
+}
+#shadow-mask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+}
+#loginform h1{
+	margin-top: 0;
+	margin-bottom: 6px;
+	font-family: 'open_sanssemibold';
+	font-size: 40px;
+	font-weight: bold;
+	line-height: 40px;
+}
+#loginform p{
+	margin-top: 0;
+}
+#loginform form{
+	margin-top: 37px;
+}
+.field{
+	width: 100%;
+	font-size: 0;
+	margin-bottom: 12px;
+}
+.field .left, .field .right{
+	display: inline-block;
+	font-size: 12px;
+}
+.field, .field *{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.field .left{
+	width: 30%;	
+	text-align: right;
+	padding-right: 11px;
+}
+.field .right{
+	width: 70%;
+	text-align: left;
+}
+input.full{
+	width: 100%;
+	background: #1e4f8a;
+	border: 1px solid #0d2c52;
+	padding: 10px 7px;
+	color: #fff;
+}
+label[for="r-me"]{
+	font-size: 11px;
+}
+#r-me{
+	vertical-align: text-top;
+	margin: 2px 0px 0px 7px;
+}
+.forgot{
+	float: right;
+	color: #fff;
+	text-decoration: underline;
+	font-size: 11px;
+}
+.submit{
+	background: rgba(81,141,226,1);
+	background: -moz-linear-gradient(left, rgba(81,141,226,1) 0%, rgba(68,129,203,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(81,141,226,1)), color-stop(100%, rgba(68,129,203,1)));
+	background: -webkit-linear-gradient(left, rgba(81,141,226,1) 0%, rgba(68,129,203,1) 100%);
+	background: -o-linear-gradient(left, rgba(81,141,226,1) 0%, rgba(68,129,203,1) 100%);
+	background: -ms-linear-gradient(left, rgba(81,141,226,1) 0%, rgba(68,129,203,1) 100%);
+	background: linear-gradient(to right, rgba(81,141,226,1) 0%, rgba(68,129,203,1) 100%);
+	-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	border: none;
+	border-radius: 5px;
+	padding: 11px 28px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+}
+.submit:hover{
+	color: rgba(81,141,226,1);
+	background: #fff;
+}
